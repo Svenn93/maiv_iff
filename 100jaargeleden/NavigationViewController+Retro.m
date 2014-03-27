@@ -7,7 +7,7 @@
 //
 
 #import "NavigationViewController+Retro.h"
-
+//fix voor de animatie met transparent views. Anders bugt de animatie => niet via dit.
 @implementation NavigationViewController (Retro)
 - (void)pushViewControllerRetro:(UIViewController *)viewController fromDirection:(NSString *)direction {
     CATransition *transition = [CATransition animation];
@@ -15,9 +15,9 @@
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionPush;
     if ([direction  isEqual: @"right"]) {
-        transition.subtype = kCATransitionFromBottom;
+        [[UIDevice currentDevice]orientation]==UIDeviceOrientationLandscapeLeft ? (transition.subtype = kCATransitionFromTop) : (transition.subtype = kCATransitionFromBottom);
     }else if([direction isEqual:@"left"]){
-        transition.subtype = kCATransitionFromTop;
+        [[UIDevice currentDevice]orientation]==UIDeviceOrientationLandscapeRight ? (transition.subtype = kCATransitionFromTop) : (transition.subtype = kCATransitionFromBottom);
     }
     [self.view.layer addAnimation:transition forKey:nil];
     

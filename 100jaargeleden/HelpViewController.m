@@ -8,6 +8,7 @@
 
 #import "HelpViewController.h"
 #import "HelpView.h"
+#import "MapViewController.h"
 
 @interface HelpViewController ()
 
@@ -35,6 +36,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    HelpView *v = (HelpView *)self.view;
+    v.delegate = self;
+}
+
+-(void)mapButtonClicked
+{
+    MapViewController *mapVC = [[MapViewController alloc]initWithNibName:nil bundle:nil];
+    [(NavigationViewController*)self.navigationController pushViewControllerRetro:mapVC fromDirection:@"right"];
 }
 
 - (void)didReceiveMemoryWarning

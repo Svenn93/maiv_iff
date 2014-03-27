@@ -16,6 +16,8 @@
     if (self) {
         // Initialization code
         [self setBackgroundColor:[UIColor purpleColor]];
+        
+        
     }
     return self;
 }

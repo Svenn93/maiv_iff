@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HelpView.h"
+#import "NavigationViewController+Retro.h"
 
-@interface HelpViewController : UIViewController
+@interface HelpViewController : UIViewController<HelpViewDelegate>
 
 @end
