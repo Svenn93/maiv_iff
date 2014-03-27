@@ -53,6 +53,7 @@
 		056BBF53E3224634B4D3CA20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		260CFE2618E4C0CA00F3E67D /* PopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpView.h; sourceTree = "<group>"; };
 		260CFE2718E4C0CA00F3E67D /* PopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpView.m; sourceTree = "<group>"; };
+		260CFE2918E4CCBB00F3E67D /* PopUpViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpViewDelegate.h; sourceTree = "<group>"; };
 		2659164718E41F510004090F /* LabelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelFactory.h; sourceTree = "<group>"; };
 		2659164818E41F510004090F /* LabelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelFactory.m; sourceTree = "<group>"; };
 		2659165018E45F620004090F /* ieper_straten.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = ieper_straten.mbtiles; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		260CFE2518E4C0A400F3E67D /* popup */ = {
 			isa = PBXGroup;
 			children = (
+				260CFE2918E4CCBB00F3E67D /* PopUpViewDelegate.h */,
 				260CFE2618E4C0CA00F3E67D /* PopUpView.h */,
 				260CFE2718E4C0CA00F3E67D /* PopUpView.m */,
 			);

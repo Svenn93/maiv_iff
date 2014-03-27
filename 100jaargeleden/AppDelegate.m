@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
     self.mainVC = [[MainViewController alloc]initWithNibName:nil bundle:nil];
     NavigationViewController *navcon = [[NavigationViewController alloc]initWithRootViewController:self.mainVC];
-    //[navcon setNavigationBarHidden:YES];
+    [navcon setNavigationBarHidden:YES];
     
     UIImage *image = [UIImage imageNamed:@"app_background"];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:image];

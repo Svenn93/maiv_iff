@@ -102,6 +102,7 @@
     self.meldingShown = YES;
     NSLog(@"Ik toon de melding");
     self.popupView = [[PopUpView alloc]initWithFrame:CGRectMake(1024, 768-670, 430, 670)];
+    self.popupView.delegate = self;
     [self addSubview:self.popupView];
     [UIView animateWithDuration:0.5 animations:^{ self.popupView.frame = CGRectMake(1024-430, 768-670, 430, 670); }];
 }
@@ -113,6 +114,12 @@
     if(self.popupView.superview){
        [UIView animateWithDuration:0.5 animations:^{ self.popupView.frame = CGRectMake(1024, 768-670, 430, 670); } completion:^(BOOL finished){ [self.popupView removeFromSuperview];}];
     }
+}
+
+-(void)popupButtonClicked
+{
+    [self.locationManager stopUpdatingLocation];
+    [self hideCurrentMelding];
 }
 
 

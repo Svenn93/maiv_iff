@@ -14,7 +14,7 @@
 #import <RMTileCache.h>
 #import "PopUpView.h"
 
-@interface MapView : UIView <UIGestureRecognizerDelegate, CLLocationManagerDelegate>
+@interface MapView : UIView <UIGestureRecognizerDelegate, CLLocationManagerDelegate, PopUpViewDelegate, RMMapViewDelegate>
 
 
 @property (nonatomic, strong) RMMapView *mapView;

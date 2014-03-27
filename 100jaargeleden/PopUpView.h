@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PopUpViewDelegate.h"
 
 @interface PopUpView : UIView
 @property (nonatomic, strong) UIButton *showChoices;
+@property (nonatomic, weak) id<PopUpViewDelegate> delegate;
+
 @end

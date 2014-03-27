@@ -34,6 +34,7 @@
 -(void) showChoices:(id)sender
 {
     NSLog(@"Show them choices boyyyyy");
+    [self.delegate popupButtonClicked];
 }
 
 /*
