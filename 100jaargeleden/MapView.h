@@ -9,10 +9,18 @@
 #import <UIKit/UIKit.h>
 #import <RMMapView.h>
 #import <RMMBTilesSource.h>
+#import <RMMapboxSource.h>
+#import <RMPointAnnotation.h>
+#import <RMTileCache.h>
+#import "PopUpView.h"
 
-@interface MapView : UIView <UIGestureRecognizerDelegate>
+@interface MapView : UIView <UIGestureRecognizerDelegate, CLLocationManagerDelegate>
 
 
 @property (nonatomic, strong) RMMapView *mapView;
-
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, assign) CLLocationCoordinate2D nextTarget;
+@property (nonatomic, strong) UIButton *buttonDagboek;
+@property (nonatomic, strong) PopUpView *popupView;
+@property (nonatomic) BOOL meldingShown;
 @end

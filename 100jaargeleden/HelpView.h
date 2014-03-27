@@ -13,5 +13,9 @@
 @property (nonatomic, strong) UILabel *lblStap1;
 @property (nonatomic, strong) UILabel *lblStap2;
 @property (nonatomic, strong) UILabel *lblStap3;
+@property (nonatomic, strong) UIImageView *ivIcon1;
+@property (nonatomic, strong) UIImageView *ivIcon2;
+@property (nonatomic, strong) UIImageView *ivIcon3;
+@property (nonatomic, strong) UIButton *startButton;
 @property (nonatomic, weak) id<HelpViewDelegate> delegate;
 @end

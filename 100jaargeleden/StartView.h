@@ -12,6 +12,5 @@
 @interface StartView : UIView
 
 @property (nonatomic, strong) UIButton *btnStart;
-@property (nonatomic, strong) UILabel *lblUitleg;
 @property (nonatomic, weak) id<StartViewDelegate> delegate;
 @end

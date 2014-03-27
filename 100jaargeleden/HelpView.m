@@ -7,6 +7,7 @@
 //
 
 #import "HelpView.h"
+#import "LabelFactory.h"
 
 @implementation HelpView
 
@@ -19,42 +20,34 @@
         UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
         [imageView setFrame:CGRectMake(0, 16, image.size.width, image.size.height)];
         
-        self.lblStap1 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 300, 400)];
-        self.lblStap2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 100, 300, 400)];
-        self.lblStap3 = [[UILabel alloc]initWithFrame:CGRectMake(0, 200, 300, 4000)];
+        UIImage *buttonImage = [UIImage imageNamed:@"begrepen_button"];
+        self.startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.startButton setImage:buttonImage forState:UIControlStateNormal];
+        [self.startButton setFrame:CGRectMake((1024-buttonImage.size.width)/2, 585, buttonImage.size.width, buttonImage.size.height)];
+        [self.startButton addTarget:self action:@selector(mapButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-        [paragraphStyle setLineSpacing:7];
+        self.lblStap1 = [LabelFactory createTypewriterLabelWithText:@"Navigeer naar de aangeduide \npunten." andXPos:150 andYPos:225 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
+        self.lblStap2 = [LabelFactory createTypewriterLabelWithText:@"Draai naar de markers voor \nmeer uitleg." andXPos:150 andYPos:345 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
+        self.lblStap3 = [LabelFactory createTypewriterLabelWithText:@"Maak een keuze en schrijf geschiedenis." andXPos:150 andYPos:480 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
         
-        UIFont *font = [UIFont fontWithName:@"Albertsthal_Typewriter" size:18];
-        UIColor *color = [UIColor blackColor];
-        
-        NSMutableAttributedString *attributedStringStap1 = [[NSMutableAttributedString alloc]initWithString:@"Achter meerdere malen teruggetrokken te zijn en al vele gruwelen meegemaakt te hebben zit Emiel met zijn peloton vlakbij de yorkshire trench & dug-out. Kapitein delafosse heeft het order gegeven daar te gaan versterken tegen een Duits offensief."];
-
-        CGFloat width = 420.f;
-        CGRect rect = [attributedStringStap1 boundingRectWithSize:CGSizeMake(width, 10000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
-        
-        NSDictionary *attributes = [[NSDictionary alloc]initWithObjects:[[NSArray alloc]initWithObjects:paragraphStyle,font,color, nil] forKeys:[[NSArray alloc]initWithObjects:NSParagraphStyleAttributeName, NSFontAttributeName, NSForegroundColorAttributeName, nil]];
-        
-        [attributedStringStap1 addAttributes:attributes range:NSMakeRange(0, attributedStringStap1.string.length)];
-        
-        self.lblStap1 = [[UILabel alloc]initWithFrame:CGRectMake(50, 200, 420, ceilf(rect.size.height))];
-        NSLog(@"De string: %@",attributedStringStap1);
-        self.lblStap1.lineBreakMode = NSLineBreakByWordWrapping;
-        self.lblStap1.textAlignment = NSTextAlignmentLeft;
-        self.lblStap1.numberOfLines = 0;
-        [self.lblStap1 setTextColor:[UIColor blackColor]];
-        [self.lblStap1 setTransform:CGAffineTransformMakeRotation(-3*(M_PI/180))];
-        self.lblStap1.attributedText = attributedStringStap1;
-        [self.lblStap1 sizeToFit];
-        
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-        [button setTitle:@"Ga naar map" forState:UIControlStateNormal];
-        [button setFrame:CGRectMake(300, 700, 200, 40)];
-        [button addTarget:self action:@selector(mapButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        UIImage *image1 = [UIImage imageNamed:@"cart_icon"];
+        self.ivIcon1 = [[UIImageView alloc]initWithImage:image1];
+        [self.ivIcon1 setFrame:CGRectMake(75, 220, image1.size.width, image1.size.height)];
+        UIImage *image2 = [UIImage imageNamed:@"gesture_icon"];
+        self.ivIcon2 = [[UIImageView alloc]initWithImage:image2];
+        [self.ivIcon2 setFrame:CGRectMake(60, 342, image2.size.width, image2.size.height)];
+        UIImage *image3 = [UIImage imageNamed:@"diary-icon"];
+        self.ivIcon3 = [[UIImageView alloc]initWithImage:image3];
+        [self.ivIcon3 setFrame:CGRectMake(75, 476, image3.size.width, image3.size.height)];
         
         [self addSubview:imageView];
-        [self addSubview:button];
+        [self addSubview:self.lblStap1];
+        [self addSubview:self.lblStap2];
+        [self addSubview:self.lblStap3];
+        [self addSubview:self.ivIcon1];
+        [self addSubview:self.ivIcon2];
+        [self addSubview:self.ivIcon3];
+        [self addSubview:self.startButton];
     }
     return self;
 }

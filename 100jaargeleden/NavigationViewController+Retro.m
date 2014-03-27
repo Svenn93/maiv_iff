@@ -11,7 +11,7 @@
 @implementation NavigationViewController (Retro)
 - (void)pushViewControllerRetro:(UIViewController *)viewController fromDirection:(NSString *)direction {
     CATransition *transition = [CATransition animation];
-    transition.duration = 0.35;
+    transition.duration = 0.5;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionPush;
     if ([direction  isEqual: @"right"]) {

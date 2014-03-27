@@ -25,7 +25,7 @@
 
 -(void) loadView{
     CGRect frame = [[UIScreen mainScreen]bounds];
-    self.mapv= [[MapView alloc] initWithFrame:CGRectMake(0, 0, 1024, 768)];
+    self.mapv= [[MapView alloc] initWithFrame:frame];
     [self setView:self.mapv];
 }
 

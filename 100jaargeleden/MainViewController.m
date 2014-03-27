@@ -35,7 +35,7 @@
     StartView *v = (StartView *)self.view;
     v.delegate = self;
     
-    [self enumerateFonts];
+    //[self enumerateFonts];
 }
 
 -(void)startButtonClicked
