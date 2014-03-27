@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2677802218E2D413003990E9 /* ieper.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2677802118E2D413003990E9 /* ieper.mbtiles */; };
+		2677802318E2D413003990E9 /* ieper.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2677802118E2D413003990E9 /* ieper.mbtiles */; };
+		2677802818E3391B003990E9 /* ieper_straten.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2677802718E3391B003990E9 /* ieper_straten.mbtiles */; };
+		2677802918E3391B003990E9 /* ieper_straten.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2677802718E3391B003990E9 /* ieper_straten.mbtiles */; };
+		2677803518E38A19003990E9 /* NavigationViewController+Retro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803418E38A19003990E9 /* NavigationViewController+Retro.m */; };
+		2677803618E38A19003990E9 /* NavigationViewController+Retro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803418E38A19003990E9 /* NavigationViewController+Retro.m */; };
+		2677803818E39601003990E9 /* Albertsthal-Typewriter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */; };
+		2677803C18E3A358003990E9 /* HelpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803B18E3A358003990E9 /* HelpView.m */; };
+		2677803F18E3A38F003990E9 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803E18E3A38E003990E9 /* HelpViewController.m */; };
 		2683C21118E16B29005CAA4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2683C21018E16B29005CAA4A /* Foundation.framework */; };
 		2683C21318E16B29005CAA4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2683C21218E16B29005CAA4A /* CoreGraphics.framework */; };
 		2683C21518E16B29005CAA4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2683C21418E16B29005CAA4A /* UIKit.framework */; };
@@ -25,8 +34,7 @@
 		2683C24C18E17C8F005CAA4A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C24B18E17C8F005CAA4A /* MainViewController.m */; };
 		2683C25018E18167005CAA4A /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C24F18E18167005CAA4A /* StartView.m */; };
 		2683C25A18E1AEFD005CAA4A /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C25918E1AEFD005CAA4A /* MapView.m */; };
-		2683C26018E1B31D005CAA4A /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C25F18E1B31D005CAA4A /* ContentViewController.m */; };
-		2683C26618E1B3D3005CAA4A /* ContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26518E1B3D3005CAA4A /* ContentScrollView.m */; };
+		2683C26018E1B31D005CAA4A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C25F18E1B31D005CAA4A /* MapViewController.m */; };
 		2683C26918E1B612005CAA4A /* DiaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26818E1B612005CAA4A /* DiaryView.m */; };
 		2683C26D18E1B9F0005CAA4A /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */; };
 		9DB1BD1CBD444532873152BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CBA8A98B4E419C95D85AD1 /* libPods.a */; };
@@ -44,6 +52,15 @@
 
 /* Begin PBXFileReference section */
 		056BBF53E3224634B4D3CA20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2677802118E2D413003990E9 /* ieper.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = ieper.mbtiles; sourceTree = "<group>"; };
+		2677802718E3391B003990E9 /* ieper_straten.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; name = ieper_straten.mbtiles; path = ../ieper_straten.mbtiles; sourceTree = "<group>"; };
+		2677803318E38A19003990E9 /* NavigationViewController+Retro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NavigationViewController+Retro.h"; sourceTree = "<group>"; };
+		2677803418E38A19003990E9 /* NavigationViewController+Retro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NavigationViewController+Retro.m"; sourceTree = "<group>"; };
+		2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertsthal-Typewriter.ttf"; sourceTree = "<group>"; };
+		2677803A18E3A358003990E9 /* HelpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpView.h; sourceTree = "<group>"; };
+		2677803B18E3A358003990E9 /* HelpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpView.m; sourceTree = "<group>"; };
+		2677803D18E3A38E003990E9 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		2677803E18E3A38E003990E9 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		2683C20D18E16B29005CAA4A /* 100jaargeleden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 100jaargeleden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2683C21018E16B29005CAA4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2683C21218E16B29005CAA4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,16 +86,12 @@
 		2683C25418E19982005CAA4A /* StartViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewDelegate.h; sourceTree = "<group>"; };
 		2683C25818E1AEFD005CAA4A /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		2683C25918E1AEFD005CAA4A /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
-		2683C25E18E1B31D005CAA4A /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
-		2683C25F18E1B31D005CAA4A /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
-		2683C26418E1B3D3005CAA4A /* ContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentScrollView.h; sourceTree = "<group>"; };
-		2683C26518E1B3D3005CAA4A /* ContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentScrollView.m; sourceTree = "<group>"; };
+		2683C25E18E1B31D005CAA4A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2683C25F18E1B31D005CAA4A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		2683C26718E1B612005CAA4A /* DiaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryView.h; sourceTree = "<group>"; };
 		2683C26818E1B612005CAA4A /* DiaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryView.m; sourceTree = "<group>"; };
 		2683C26B18E1B9F0005CAA4A /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
-		2683C26F18E1CD9D005CAA4A /* ieper.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = ieper.mbtiles; sourceTree = "<group>"; };
-		2683C27018E1D334005CAA4A /* MapViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewDelegate.h; sourceTree = "<group>"; };
 		85CBA8A98B4E419C95D85AD1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,9 +122,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2677802A18E3872E003990E9 /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2683C26B18E1B9F0005CAA4A /* NavigationViewController.h */,
+				2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */,
+			);
+			name = NavigationViewController;
+			sourceTree = "<group>";
+		};
+		2677803918E3A33E003990E9 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				2677803A18E3A358003990E9 /* HelpView.h */,
+				2677803B18E3A358003990E9 /* HelpView.m */,
+			);
+			name = help;
+			sourceTree = "<group>";
+		};
 		2683C20418E16B29005CAA4A = {
 			isa = PBXGroup;
 			children = (
+				2677802118E2D413003990E9 /* ieper.mbtiles */,
 				2683C21818E16B2A005CAA4A /* 100jaargeleden */,
 				2683C23518E16B2A005CAA4A /* 100jaargeledenTests */,
 				2683C20F18E16B29005CAA4A /* Frameworks */,
@@ -145,7 +177,6 @@
 		2683C21818E16B2A005CAA4A /* 100jaargeleden */ = {
 			isa = PBXGroup;
 			children = (
-				2683C26E18E1CD78005CAA4A /* tiles */,
 				2683C22118E16B2A005CAA4A /* AppDelegate.h */,
 				2683C22218E16B2A005CAA4A /* AppDelegate.m */,
 				2683C24D18E18129005CAA4A /* views */,
@@ -153,7 +184,6 @@
 				2683C22718E16B2A005CAA4A /* Images.xcassets */,
 				2683C22418E16B2A005CAA4A /* _00jaargeleden.xcdatamodeld */,
 				2683C21918E16B2A005CAA4A /* Supporting Files */,
-				2683C27018E1D334005CAA4A /* MapViewDelegate.h */,
 			);
 			path = 100jaargeleden;
 			sourceTree = "<group>";
@@ -161,6 +191,8 @@
 		2683C21918E16B2A005CAA4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */,
+				2677802718E3391B003990E9 /* ieper_straten.mbtiles */,
 				2683C21A18E16B2A005CAA4A /* 100jaargeleden-Info.plist */,
 				2683C21B18E16B2A005CAA4A /* InfoPlist.strings */,
 				2683C21E18E16B2A005CAA4A /* main.m */,
@@ -192,10 +224,13 @@
 			children = (
 				2683C24A18E17C8F005CAA4A /* MainViewController.h */,
 				2683C24B18E17C8F005CAA4A /* MainViewController.m */,
-				2683C25E18E1B31D005CAA4A /* ContentViewController.h */,
-				2683C25F18E1B31D005CAA4A /* ContentViewController.m */,
-				2683C26B18E1B9F0005CAA4A /* NavigationViewController.h */,
-				2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */,
+				2683C25E18E1B31D005CAA4A /* MapViewController.h */,
+				2683C25F18E1B31D005CAA4A /* MapViewController.m */,
+				2677802A18E3872E003990E9 /* NavigationViewController */,
+				2677803318E38A19003990E9 /* NavigationViewController+Retro.h */,
+				2677803418E38A19003990E9 /* NavigationViewController+Retro.m */,
+				2677803D18E3A38E003990E9 /* HelpViewController.h */,
+				2677803E18E3A38E003990E9 /* HelpViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -203,11 +238,10 @@
 		2683C24D18E18129005CAA4A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				2677803918E3A33E003990E9 /* help */,
 				2683C26A18E1B617005CAA4A /* Diary */,
 				2683C25718E1AECC005CAA4A /* map */,
 				2683C25618E1AEBF005CAA4A /* intro */,
-				2683C26418E1B3D3005CAA4A /* ContentScrollView.h */,
-				2683C26518E1B3D3005CAA4A /* ContentScrollView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -238,14 +272,6 @@
 				2683C26818E1B612005CAA4A /* DiaryView.m */,
 			);
 			name = Diary;
-			sourceTree = "<group>";
-		};
-		2683C26E18E1CD78005CAA4A /* tiles */ = {
-			isa = PBXGroup;
-			children = (
-				2683C26F18E1CD9D005CAA4A /* ieper.mbtiles */,
-			);
-			name = tiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +323,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Sven Lombaert";
 				TargetAttributes = {
+					2683C20C18E16B29005CAA4A = {
+						DevelopmentTeam = 9RZW73LTB7;
+					};
 					2683C22C18E16B2A005CAA4A = {
 						TestTargetID = 2683C20C18E16B29005CAA4A;
 					};
@@ -325,7 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2677802818E3391B003990E9 /* ieper_straten.mbtiles in Resources */,
+				2677803818E39601003990E9 /* Albertsthal-Typewriter.ttf in Resources */,
 				2683C21D18E16B2A005CAA4A /* InfoPlist.strings in Resources */,
+				2677802218E2D413003990E9 /* ieper.mbtiles in Resources */,
 				2683C22818E16B2A005CAA4A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +366,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2677802318E2D413003990E9 /* ieper.mbtiles in Resources */,
 				2683C23A18E16B2A005CAA4A /* InfoPlist.strings in Resources */,
+				2677802918E3391B003990E9 /* ieper_straten.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,14 +413,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2683C22318E16B2A005CAA4A /* AppDelegate.m in Sources */,
-				2683C26018E1B31D005CAA4A /* ContentViewController.m in Sources */,
+				2683C26018E1B31D005CAA4A /* MapViewController.m in Sources */,
 				2683C26D18E1B9F0005CAA4A /* NavigationViewController.m in Sources */,
 				2683C26918E1B612005CAA4A /* DiaryView.m in Sources */,
 				2683C21F18E16B2A005CAA4A /* main.m in Sources */,
-				2683C26618E1B3D3005CAA4A /* ContentScrollView.m in Sources */,
 				2683C22618E16B2A005CAA4A /* _00jaargeleden.xcdatamodeld in Sources */,
+				2677803C18E3A358003990E9 /* HelpView.m in Sources */,
+				2677803F18E3A38F003990E9 /* HelpViewController.m in Sources */,
 				2683C25A18E1AEFD005CAA4A /* MapView.m in Sources */,
 				2683C24C18E17C8F005CAA4A /* MainViewController.m in Sources */,
+				2677803518E38A19003990E9 /* NavigationViewController+Retro.m in Sources */,
 				2683C25018E18167005CAA4A /* StartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2677803618E38A19003990E9 /* NavigationViewController+Retro.m in Sources */,
 				2683C23C18E16B2A005CAA4A /* _00jaargeledenTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,10 +544,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "100jaargeleden/100jaargeleden-Prefix.pch";
 				INFOPLIST_FILE = "100jaargeleden/100jaargeleden-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,10 +561,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "100jaargeleden/100jaargeleden-Prefix.pch";
 				INFOPLIST_FILE = "100jaargeleden/100jaargeleden-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

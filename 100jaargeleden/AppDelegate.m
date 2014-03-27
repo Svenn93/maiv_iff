@@ -18,7 +18,12 @@
     NavigationViewController *navcon = [[NavigationViewController alloc]initWithRootViewController:self.mainVC];
     [navcon setNavigationBarHidden:YES];
     
-    self.window.backgroundColor = [UIColor whiteColor];
+    UIImage *image = [UIImage imageNamed:@"app_background"];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
+    imageView.transform = CGAffineTransformMakeRotation(M_PI/2);
+    [imageView setFrame:[[UIScreen mainScreen]bounds]];
+    [self.window addSubview:imageView];
+    
     [self.window makeKeyAndVisible];
     [self.window setRootViewController:navcon];
     return YES;

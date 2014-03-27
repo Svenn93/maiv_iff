@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "StartView.h"
-#import "ContentViewController.h"
+#import "NavigationViewController+Retro.h"
 
 @interface MainViewController : UIViewController <StartViewDelegate>;
 @end

@@ -15,32 +15,19 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor redColor];
+        /*UIImage *image = [UIImage imageNamed:@"app_background"];
+        UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
+        [self addSubview:imageView];*/
         
-        self.mapView = [[RMMapView alloc] initWithFrame:frame];
+        NSString *stringPath = [[NSBundle mainBundle]pathForResource:@"ieper_straten" ofType:@"mbtiles"];
+        NSURL *url = [NSURL fileURLWithPath:stringPath];
+        RMMBTilesSource *tileSource = [[RMMBTilesSource alloc]initWithTileSetURL:url];
+        
+        NSLog(@"De tilesource: %@ met url %@ en stringPath: %@", tileSource, url, stringPath);
+        CLLocationCoordinate2D centerPoint = CLLocationCoordinate2DMake(50.8844, 2.8875);
+        self.mapView = [[RMMapView alloc] initWithFrame:CGRectMake(112, 134, 800, 500) andTilesource:tileSource centerCoordinate:centerPoint zoomLevel:14 maxZoomLevel:18 minZoomLevel:14 backgroundImage:nil];
         [self addSubview:self.mapView];
-        
-        
-        UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft)];
-        swipeLeft.delegate = self;
-        swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
-        [self.mapView addGestureRecognizer:swipeLeft];
     }
     return self;
 }
-
-- (void)swipeLeft {
-    NSLog(@"swipe left!");
-    [self.delegate didSwipeLeft];
-}
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-    
-    NSLog(@"hello");
-    
-    return YES;
-    
-}
-
-
 @end

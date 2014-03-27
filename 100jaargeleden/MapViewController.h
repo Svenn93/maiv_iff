@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ContentScrollView.h"
 #import "MapView.h"
 #import "DiaryView.h"
 
-@interface ContentViewController : UIViewController <MapViewDelegate>
+@interface MapViewController : UIViewController
 
 
-@property (nonatomic, strong) ContentScrollView *v;
 @property (nonatomic, strong) MapView *mapv;
-@property (nonatomic, strong) DiaryView *diaryv;
 @end

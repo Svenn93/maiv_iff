@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <RMMapView.h>
-
-#import "MapViewDelegate.h"
+#import <RMMBTilesSource.h>
 
 @interface MapView : UIView <UIGestureRecognizerDelegate>
 
 
 @property (nonatomic, strong) RMMapView *mapView;
-@property (nonatomic, weak) id<MapViewDelegate> delegate;
 
 @end

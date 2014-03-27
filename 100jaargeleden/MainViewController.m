@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "HelpViewController.h"
 
 @interface MainViewController ()
 
@@ -27,26 +28,39 @@
     CGRect frame = [[UIScreen mainScreen]bounds];
     StartView *v = [[StartView alloc]initWithFrame:frame];
     [self setView:v];
-    
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     StartView *v = (StartView *)self.view;
     v.delegate = self;
+    
+    [self enumerateFonts];
 }
 
 -(void)startButtonClicked
 {
     NSLog(@"[MainViewController] er is op de start button geklikt");
-    ContentViewController *mapViewVC = [[ContentViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController pushViewController:mapViewVC animated:YES];
+    HelpViewController *helpViewVC = [[HelpViewController alloc]initWithNibName:nil bundle:nil];
+    [(NavigationViewController*)self.navigationController pushViewControllerRetro:helpViewVC fromDirection:@"right"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)enumerateFonts {
+    NSLog(@"--Start enumerating font--");
+    for (NSString *fontFamilyStrings in [UIFont familyNames]) {
+        NSLog(@"Font family: %@", fontFamilyStrings);
+        for (NSString *fontStrings in [UIFont
+                                       fontNamesForFamilyName:fontFamilyStrings]) {
+            NSLog(@"-- Font: %@", fontStrings);
+        }
+    }
+    NSLog(@"--End enumerating font--");
 }
 
 /*
