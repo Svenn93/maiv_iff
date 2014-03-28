@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiaryView : UIView
+@interface DagBoekView : UIView
 
 @end

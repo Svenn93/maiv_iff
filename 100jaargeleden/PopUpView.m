@@ -7,6 +7,7 @@
 //
 
 #import "PopUpView.h"
+#import "LabelFactory.h"
 
 @implementation PopUpView
 
@@ -19,23 +20,47 @@
         UIImageView *iv = [[UIImageView alloc]initWithImage:image];
         [iv setFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
         
-        UIImage *btnImage = [UIImage imageNamed:@"situatie_button"];
-        self.showChoices = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.showChoices setImage:btnImage forState:UIControlStateNormal];
-        [self.showChoices setFrame:CGRectMake(100, 520, btnImage.size.width, btnImage.size.height)];
-        [self.showChoices addTarget:self action:@selector(showChoices:) forControlEvents:UIControlEventTouchUpInside];
+        UIImage *btnImage = [[UIImage alloc]init];
+        if([self.type isEqual:@"situatie"]){
+            btnImage = [UIImage imageNamed:@"situatie_button"];
+        }else{
+            btnImage = [UIImage imageNamed:@"keuzeMaken"];
+        }
+        NSLog(@"Het verhaal: %@", [self.info valueForKey:@"verhaal"]);
+        NSLog(@"Het path: %@", [self.info valueForKey:@"fotoPath"]);
+        UIImage *imageUitleg = [UIImage imageNamed:[self.info valueForKey:@"fotoPath"]];
+        UIImageView *imageUitlegV = [[UIImageView alloc]initWithImage:imageUitleg];
+        [imageUitlegV setFrame:CGRectMake(5, 5, imageUitleg.size.width, imageUitleg.size.height)];
         
+        UILabel *uitleg = [LabelFactory createTypewriterLabelWithText:[self.info valueForKey:@"verhaal"] andXPos:55 andYPos:310 andWidth:335 andRotation:-2 andFont:@"Courier" andFontSize:17 andKerning:@-5 andLineHeight:5];
+        
+        self.confirmationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.confirmationButton setImage:btnImage forState:UIControlStateNormal];
+        [self.confirmationButton setFrame:CGRectMake(100, 545, btnImage.size.width, btnImage.size.height)];
+        [self.confirmationButton addTarget:self action:@selector(confirmationButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:iv];
-        [self addSubview:self.showChoices];
+        [self addSubview:uitleg];
+        [self addSubview:imageUitlegV];
+        [self addSubview:self.confirmationButton];
+        
     }
     return self;
 }
 
--(void) showChoices:(id)sender
+- (id)initWithFrame:(CGRect)frame andInfo:(NSObject *)info andType:(NSString *)type
 {
-    NSLog(@"Show them choices boyyyyy");
+    self.info = info;
+    self.type = type;
+    return [self initWithFrame:frame];
+}
+
+-(void) confirmationButtonTapped:(id)sender
+{
+    NSLog(@"[POPUPVIEW] button clicked");
     [self.delegate popupButtonClicked];
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

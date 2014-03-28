@@ -7,6 +7,8 @@
 //
 
 #import "MapViewController.h"
+#import "DagboekViewController.h"
+#import "NavigationViewController+Retro.h"
 
 @interface MapViewController ()
 
@@ -19,6 +21,54 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        NSString *situatiesPath = [[NSBundle mainBundle] pathForResource:@"situaties" ofType:@"json"];
+        NSData *jsonData = [NSData dataWithContentsOfFile:situatiesPath];
+        NSError *errorJSON = nil;
+        
+        NSArray *loadedData = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&errorJSON];
+        if(!errorJSON){
+            self.situaties = [[NSMutableArray alloc]init];
+            for (NSDictionary *dict in loadedData)
+            {
+                [self.situaties addObject:[SituatieFactory createSituatieWithDictionary:dict]];
+            }
+            
+        }else{
+            NSLog(@"TGA NIE :'(");
+        }
+        
+        NSString *keuzesPath = [[NSBundle mainBundle] pathForResource:@"keuzes" ofType:@"json"];
+        NSData *jsonKeuzesData = [NSData dataWithContentsOfFile:keuzesPath];
+        NSError *errorJSONkeuzes = nil;
+        
+        NSArray *loadedKeuzesData = [NSJSONSerialization JSONObjectWithData:jsonKeuzesData options:NSJSONReadingMutableContainers error:&errorJSONkeuzes];
+        if(!errorJSONkeuzes){
+            self.keuzes = [[NSMutableArray alloc]init];
+            for (NSDictionary *dict in loadedKeuzesData)
+            {
+                [self.keuzes addObject:[KeuzeFactory createKeuzeWithDictionary:dict]];
+            }
+            
+        }else{
+            NSLog(@"TGA NIE :'(");
+        }
+        
+        NSString *uitkomstPath = [[NSBundle mainBundle] pathForResource:@"uitkomst" ofType:@"json"];
+        NSData *jsonUitkomstData = [NSData dataWithContentsOfFile:uitkomstPath];
+        NSError *errorJSONuitkomst = nil;
+        
+        NSArray *loadedUitkomstData = [NSJSONSerialization JSONObjectWithData:jsonUitkomstData options:NSJSONReadingMutableContainers error:&errorJSONuitkomst];
+        if(!errorJSONuitkomst){
+            self.uitkomsten = [[NSMutableArray alloc]init];
+            for (NSDictionary *dict in loadedUitkomstData)
+            {
+                [self.uitkomsten addObject:[UitkomstFactory createKeuzeWithDictionary:dict]];
+            }
+            
+        }else{
+            NSLog(@"TGA NIE :'(");
+        }
+
     }
     return self;
 }
@@ -26,7 +76,15 @@
 -(void) loadView{
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.mapv= [[MapView alloc] initWithFrame:frame];
+    self.mapv.delegate = self;
     [self setView:self.mapv];
+    [self.mapv updateMapWithSituaties:self.situaties andKeuzes:self.keuzes andUitkomsten:self.uitkomsten];
+}
+
+-(void)dagboekButtonTapped
+{
+    DagboekViewController *dgbVC = [[DagboekViewController alloc]initWithNibName:nil bundle:nil];
+    [(NavigationViewController *)self.navigationController pushViewControllerRetro:dgbVC fromDirection:@"right"];
 }
 
 - (void)viewDidLoad

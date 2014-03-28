@@ -1,0 +1,82 @@
+[
+    {
+        "id": "11",
+        "melding": "1",
+        "verhaal": "Je gaat verder naar de dug-out. Iets verder van de frontlinie is het veiliger en het was een direct bevel.",
+        "fotopath": "keuze1.png",
+        "latitude": "50.88749166666667",
+        "longitude": "2.8754444444444447"
+    },
+    {
+        "id": "12",
+        "melding": "1",
+        "verhaal": "Je weet dat jouw kameraden elk moment kunnen worden aangevallen. Meer manschappen zouden veel levens kunnen sparen aan de frontlinie.",
+        "fotopath": "keuze2.png",
+        "latitude": "50.88871666666667",
+        "longitude": "2.882536111111111"
+    },
+    {
+        "id": "13",
+        "melding": "2",
+        "verhaal": "Jullie gaan verder naar de volgende Belgische post. Jullie bevoorrading is al heel pover dus er valt niets te sparen. Anders gaan jullie Belgische posten moeten teleurstellen.",
+        "fotopath": "keuze3.png",
+        "latitude": "50.87999444444444",
+        "longitude": "2.8842194444444442"
+    },
+    {
+        "id": "14",
+        "melding": "2",
+        "verhaal": "Je vraagt met hoeveel ze zijn en besluit hun een noodrantsoen mee te geven. Alle linies moeten er namelijk even sterk staan om een sluitstuk te vormen.",
+        "fotopath": "keuze4.png",
+        "latitude": "50.88160833333333",
+        "longitude": "2.886461111111111"
+    },
+    {
+        "id": "15",
+        "melding": "3",
+        "verhaal": "Je twijfelt geen moment. Elke soldaat dat deserteert wordt gefusilleerd. Je pakt je geweer mikt en schiet.",
+        "fotopath": "keuze5.png",
+        "latitude": "50.875375",
+        "longitude": "2.9018916666666668"
+    },
+    {
+        "id": "16",
+        "melding": "3",
+        "verhaal": "Je weet dat die jongens 17 zijn. Vorige week zijn ze toegekomen als trotse soldaat, maar het front heeft een grote inpakt op ze gehad. Ze zijn veel kameraden verloren, zijn onderkoeld en ondervoed. Je gebaart dat je niets ziet, niets merkt.",
+        "fotopath": "keuze6.png",
+        "latitude": "50.87329166666667",
+        "longitude": "2.902886111111111"
+    },
+    {
+        "id": "17",
+        "melding": "4",
+        "verhaal": "Je gaat vlug door naar jullie Britse collega's. Bevel is bevel en als zij nu worden bestoken met gas zullen er veel sneuvelen.",
+        "fotopath": "keuze7.png",
+        "latitude": "50.88016666666667",
+        "longitude": "2.9069527777777777"
+    },
+    {
+        "id": "18",
+        "melding": "4",
+        "verhaal": "Je verkiest om vlug naar de Canadezen te gaan. Er vallen daar nog levens te redden en de britten liggen momenteel toch niet onder vuur.",
+        "fotopath": "keuze8.png",
+        "latitude": "50.87561111111111",
+        "longitude": "2.913769444444444"
+    },
+    {
+        "id": "19",
+        "melding": "5",
+        "verhaal": "Het offensief is al ingezet, het is beter als jullie de krachten bundelen en eerst de Duitsers een stevige prik geven. De beste verdediging is namelijk de aanval. Later kunnen de britten dan jullie komen helpen.",
+        "fotopath": "keuze9.png",
+        "latitude": "50.887991666666665",
+        "longitude": "2.8971916666666666"
+    },
+    {
+        "id": "20",
+        "melding": "5",
+        "verhaal": "Direct bevel van de kapitein, jullie gaan terug naar de yorkshire trench. Voor vorst, voor vrijheid en voor recht!",
+        "fotopath": "keuze10.png",
+        "latitude": "50.884436111111114",
+        "longitude": "2.8900527777777776"
+    }
+]

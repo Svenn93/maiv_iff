@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Sven Lombaert. All rights reserved.
 //
 
-#import "DiaryView.h"
+#import "DagBoekView.h"
 
-@implementation DiaryView
+@implementation DagBoekView
 
 - (id)initWithFrame:(CGRect)frame
 {

@@ -26,9 +26,9 @@
         [self.startButton setFrame:CGRectMake((1024-buttonImage.size.width)/2, 585, buttonImage.size.width, buttonImage.size.height)];
         [self.startButton addTarget:self action:@selector(mapButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        self.lblStap1 = [LabelFactory createTypewriterLabelWithText:@"Navigeer naar de aangeduide \npunten." andXPos:150 andYPos:225 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
-        self.lblStap2 = [LabelFactory createTypewriterLabelWithText:@"Draai naar de markers voor \nmeer uitleg." andXPos:150 andYPos:345 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
-        self.lblStap3 = [LabelFactory createTypewriterLabelWithText:@"Maak een keuze en schrijf geschiedenis." andXPos:150 andYPos:480 andWidth:360 andRotation:0 andFontSize:24 andKerning:@-2];
+        self.lblStap1 = [LabelFactory createTypewriterLabelWithText:@"Navigeer naar de aangeduide \npunten." andXPos:150 andYPos:225 andWidth:360 andRotation:0 andFont:@"Albertsthal_Typewriter" andFontSize:24 andKerning:@-2 andLineHeight:7];
+        self.lblStap2 = [LabelFactory createTypewriterLabelWithText:@"Draai naar de markers voor \nmeer uitleg." andXPos:150 andYPos:345 andWidth:360  andRotation:0 andFont:@"Albertsthal_Typewriter" andFontSize:24 andKerning:@-2 andLineHeight:7];
+        self.lblStap3 = [LabelFactory createTypewriterLabelWithText:@"Maak een keuze en schrijf geschiedenis." andXPos:150 andYPos:480 andWidth:360 andRotation:0 andFont:@"Albertsthal_Typewriter" andFontSize:24 andKerning:@-2 andLineHeight:7];
         
         UIImage *image1 = [UIImage imageNamed:@"cart_icon"];
         self.ivIcon1 = [[UIImageView alloc]initWithImage:image1];

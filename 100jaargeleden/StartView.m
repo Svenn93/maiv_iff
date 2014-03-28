@@ -27,7 +27,7 @@
         [self.btnStart setFrame:CGRectMake((1024-btnImage.size.width)/2, 580, btnImage.size.width, btnImage.size.height)];
         [self.btnStart addTarget:self action:@selector(startButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
         
-        UILabel *lblUitleg = [LabelFactory createTypewriterLabelWithText:@"Achter meerdere malen teruggetrokken te zijn en al vele gruwelen meegemaakt te hebben zit Emiel met zijn peloton vlakbij de yorkshire trench & dug-out. Kapitein delafosse heeft het order gegeven daar te gaan versterken tegen een Duits offensief." andXPos:50 andYPos:200 andWidth:420 andRotation:-3 andFontSize:18 andKerning:@0];
+        UILabel *lblUitleg = [LabelFactory createTypewriterLabelWithText:@"Achter meerdere malen teruggetrokken te zijn en al vele gruwelen meegemaakt te hebben zit Emiel met zijn peloton vlakbij de yorkshire trench & dug-out. Kapitein delafosse heeft het order gegeven daar te gaan versterken tegen een Duits offensief." andXPos:50 andYPos:200 andWidth:420 andRotation:-3 andFont:@"Albertsthal_Typewriter" andFontSize:18 andKerning:@0 andLineHeight:7];
         
         [self addSubview:imageView];
         [self addSubview:lblUitleg];

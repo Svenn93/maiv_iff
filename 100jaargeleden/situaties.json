@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "verhaal": "Bijna aangekomen aan de yorkshire trench horen jullie zwaar artillerie. Dit is meestal een voorbode op een naderend offensief. Wat doe je?",
+        "fotopath": "melding1.png",
+        "latitude": "50.887",
+        "longitude": "2.87497"
+    },
+    {
+        "id": "2",
+        "verhaal": "Jullie peloton is opgezadeld met het voorzien van proviand aan alle Belgische pelotons die stelling hebben genomen aan de Ieperboog. Onderweg komen jullie een Britse regiment tegen. Zij smeken om ook een voedselpakket want de Britse bevoorrading komt er niet door.",
+        "fotopath": "melding2.png",
+        "latitude": "50.8807",
+        "longitude": "2.88547"
+    },
+    {
+        "id": "3",
+        "verhaal": "Het is een rustige nacht. Hier en daar wordt er rustig gefluisterd tot er plots tumult onstaat. Blijkbaar hebben er 3 jonge knapen besloten het hazepad naar de duitsers te kiezen. Jij ziet hun silhouetten duidelijk en ze zijn nog binnen vizier.",
+        "fotopath": "melding3.png",
+        "latitude": "50.8743",
+        "longitude": "2.90248"
+    },
+    {
+        "id": "4",
+        "verhaal": "Jullie hebben de opdracht gehad om gasmaskers te bezorgen aan jullie Britse collega's aan de cross roads. Jullie zijn er maar horen in de verte meermaals op fluitjes geblazen worden. Het zijn de canadezen die onder een gasaanval liggen, En je weet niet of zij al voorzien zijn van gasmaskers. Wat doe je.",
+        "fotopath": "melding4.png",
+        "latitude": "50.8779",
+        "longitude": "2.91027"
+    },
+    {
+        "id": "5",
+        "verhaal": "Jullie zijn samen met de Britten en het is de eerste maal dat jullie een tegenoffensief wagen, de spanning is te snijden. Net voor het offensief zegt Kapitein delafosse dat de Belgische troepen dringend teruggeroepen worden naar Yorkshire Trench. De Belgische troepen liggen daar namelijk zwaar onder vuur moeten dringend hulp krijgen voordat de linies doorbroken worden.",
+        "fotopath": "melding5.png",
+        "latitude": "50.8847",
+        "longitude": "2.89519"
+    }
+]

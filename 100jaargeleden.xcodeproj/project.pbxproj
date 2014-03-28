@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		260CFE2818E4C0CA00F3E67D /* PopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 260CFE2718E4C0CA00F3E67D /* PopUpView.m */; };
 		2659164918E41F510004090F /* LabelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659164818E41F510004090F /* LabelFactory.m */; };
-		2659165118E45F620004090F /* ieper_straten.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2659165018E45F620004090F /* ieper_straten.mbtiles */; };
 		2677803518E38A19003990E9 /* NavigationViewController+Retro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803418E38A19003990E9 /* NavigationViewController+Retro.m */; };
 		2677803618E38A19003990E9 /* NavigationViewController+Retro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2677803418E38A19003990E9 /* NavigationViewController+Retro.m */; };
 		2677803818E39601003990E9 /* Albertsthal-Typewriter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */; };
@@ -34,8 +33,20 @@
 		2683C25018E18167005CAA4A /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C24F18E18167005CAA4A /* StartView.m */; };
 		2683C25A18E1AEFD005CAA4A /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C25918E1AEFD005CAA4A /* MapView.m */; };
 		2683C26018E1B31D005CAA4A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C25F18E1B31D005CAA4A /* MapViewController.m */; };
-		2683C26918E1B612005CAA4A /* DiaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26818E1B612005CAA4A /* DiaryView.m */; };
+		2683C26918E1B612005CAA4A /* DagBoekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26818E1B612005CAA4A /* DagBoekView.m */; };
 		2683C26D18E1B9F0005CAA4A /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */; };
+		2685D79318E55FC900B89858 /* route.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2685D79218E55FC900B89858 /* route.geojson */; };
+		2685D79518E5623C00B89858 /* ieper_straten.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 2685D79418E5623C00B89858 /* ieper_straten.mbtiles */; };
+		26F4587018E5671800CDEC7E /* situaties.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F4586F18E5671800CDEC7E /* situaties.json */; };
+		26F4587318E567CE00CDEC7E /* SituatieData.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4587218E567CE00CDEC7E /* SituatieData.m */; };
+		26F4587918E5694A00CDEC7E /* SituatieFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4587818E5694A00CDEC7E /* SituatieFactory.m */; };
+		26F4587B18E58D1300CDEC7E /* keuzes.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F4587A18E58D1300CDEC7E /* keuzes.json */; };
+		26F4587F18E58E5300CDEC7E /* KeuzeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4587E18E58E5300CDEC7E /* KeuzeData.m */; };
+		26F4588218E58E5D00CDEC7E /* KeuzeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4588118E58E5D00CDEC7E /* KeuzeFactory.m */; };
+		26F4588C18E5CFA200CDEC7E /* uitkomst.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F4588B18E5CFA200CDEC7E /* uitkomst.json */; };
+		26F4589018E5D0F100CDEC7E /* UitkomstData.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4588F18E5D0F100CDEC7E /* UitkomstData.m */; };
+		26F4589318E5D18700CDEC7E /* UitkomstFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4589218E5D18700CDEC7E /* UitkomstFactory.m */; };
+		26F4589618E5D8FB00CDEC7E /* DagboekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F4589518E5D8FB00CDEC7E /* DagboekViewController.m */; };
 		9DB1BD1CBD444532873152BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CBA8A98B4E419C95D85AD1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +67,6 @@
 		260CFE2918E4CCBB00F3E67D /* PopUpViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopUpViewDelegate.h; sourceTree = "<group>"; };
 		2659164718E41F510004090F /* LabelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelFactory.h; sourceTree = "<group>"; };
 		2659164818E41F510004090F /* LabelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelFactory.m; sourceTree = "<group>"; };
-		2659165018E45F620004090F /* ieper_straten.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = ieper_straten.mbtiles; sourceTree = "<group>"; };
 		2677803318E38A19003990E9 /* NavigationViewController+Retro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NavigationViewController+Retro.h"; sourceTree = "<group>"; };
 		2677803418E38A19003990E9 /* NavigationViewController+Retro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NavigationViewController+Retro.m"; sourceTree = "<group>"; };
 		2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Albertsthal-Typewriter.ttf"; sourceTree = "<group>"; };
@@ -92,10 +102,30 @@
 		2683C25918E1AEFD005CAA4A /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		2683C25E18E1B31D005CAA4A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2683C25F18E1B31D005CAA4A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		2683C26718E1B612005CAA4A /* DiaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryView.h; sourceTree = "<group>"; };
-		2683C26818E1B612005CAA4A /* DiaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryView.m; sourceTree = "<group>"; };
+		2683C26718E1B612005CAA4A /* DagBoekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DagBoekView.h; sourceTree = "<group>"; };
+		2683C26818E1B612005CAA4A /* DagBoekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DagBoekView.m; sourceTree = "<group>"; };
 		2683C26B18E1B9F0005CAA4A /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		2683C26C18E1B9F0005CAA4A /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		2685D79218E55FC900B89858 /* route.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = route.geojson; sourceTree = "<group>"; };
+		2685D79418E5623C00B89858 /* ieper_straten.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = ieper_straten.mbtiles; sourceTree = "<group>"; };
+		26F4586F18E5671800CDEC7E /* situaties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = situaties.json; sourceTree = "<group>"; };
+		26F4587118E567CE00CDEC7E /* SituatieData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SituatieData.h; sourceTree = "<group>"; };
+		26F4587218E567CE00CDEC7E /* SituatieData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SituatieData.m; sourceTree = "<group>"; };
+		26F4587718E5694A00CDEC7E /* SituatieFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SituatieFactory.h; sourceTree = "<group>"; };
+		26F4587818E5694A00CDEC7E /* SituatieFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SituatieFactory.m; sourceTree = "<group>"; };
+		26F4587A18E58D1300CDEC7E /* keuzes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keuzes.json; sourceTree = "<group>"; };
+		26F4587D18E58E5300CDEC7E /* KeuzeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeuzeData.h; sourceTree = "<group>"; };
+		26F4587E18E58E5300CDEC7E /* KeuzeData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeuzeData.m; sourceTree = "<group>"; };
+		26F4588018E58E5D00CDEC7E /* KeuzeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeuzeFactory.h; sourceTree = "<group>"; };
+		26F4588118E58E5D00CDEC7E /* KeuzeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeuzeFactory.m; sourceTree = "<group>"; };
+		26F4588B18E5CFA200CDEC7E /* uitkomst.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uitkomst.json; sourceTree = "<group>"; };
+		26F4588E18E5D0F100CDEC7E /* UitkomstData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UitkomstData.h; sourceTree = "<group>"; };
+		26F4588F18E5D0F100CDEC7E /* UitkomstData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UitkomstData.m; sourceTree = "<group>"; };
+		26F4589118E5D18700CDEC7E /* UitkomstFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UitkomstFactory.h; sourceTree = "<group>"; };
+		26F4589218E5D18700CDEC7E /* UitkomstFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UitkomstFactory.m; sourceTree = "<group>"; };
+		26F4589418E5D8FB00CDEC7E /* DagboekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DagboekViewController.h; sourceTree = "<group>"; };
+		26F4589518E5D8FB00CDEC7E /* DagboekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DagboekViewController.m; sourceTree = "<group>"; };
+		26F4589718E5D9AF00CDEC7E /* MapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDelegate.h; sourceTree = "<group>"; };
 		85CBA8A98B4E419C95D85AD1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,13 +166,15 @@
 			name = popup;
 			sourceTree = "<group>";
 		};
-		2659164618E41F260004090F /* factories */ = {
+		2659164618E41F260004090F /* Factories/DataObjects */ = {
 			isa = PBXGroup;
 			children = (
-				2659164718E41F510004090F /* LabelFactory.h */,
-				2659164818E41F510004090F /* LabelFactory.m */,
+				26F4588D18E5D0E400CDEC7E /* Uitkomsten */,
+				26F4587C18E58D9D00CDEC7E /* Keuzes */,
+				26F4587618E5680700CDEC7E /* Situatie */,
+				26F4587518E567F900CDEC7E /* Label */,
 			);
-			name = factories;
+			name = Factories/DataObjects;
 			sourceTree = "<group>";
 		};
 		2677802A18E3872E003990E9 /* NavigationViewController */ = {
@@ -202,7 +234,7 @@
 			children = (
 				2683C22118E16B2A005CAA4A /* AppDelegate.h */,
 				2683C22218E16B2A005CAA4A /* AppDelegate.m */,
-				2659164618E41F260004090F /* factories */,
+				2659164618E41F260004090F /* Factories/DataObjects */,
 				2683C24D18E18129005CAA4A /* views */,
 				2683C24918E17C52005CAA4A /* ViewControllers */,
 				2683C22718E16B2A005CAA4A /* Images.xcassets */,
@@ -215,7 +247,8 @@
 		2683C21918E16B2A005CAA4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2659165018E45F620004090F /* ieper_straten.mbtiles */,
+				26F4586E18E5670A00CDEC7E /* json */,
+				26F4586D18E566E200CDEC7E /* mapdata */,
 				2677803718E39601003990E9 /* Albertsthal-Typewriter.ttf */,
 				2683C21A18E16B2A005CAA4A /* 100jaargeleden-Info.plist */,
 				2683C21B18E16B2A005CAA4A /* InfoPlist.strings */,
@@ -255,6 +288,8 @@
 				2677803418E38A19003990E9 /* NavigationViewController+Retro.m */,
 				2677803D18E3A38E003990E9 /* HelpViewController.h */,
 				2677803E18E3A38E003990E9 /* HelpViewController.m */,
+				26F4589418E5D8FB00CDEC7E /* DagboekViewController.h */,
+				26F4589518E5D8FB00CDEC7E /* DagboekViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +319,7 @@
 		2683C25718E1AECC005CAA4A /* map */ = {
 			isa = PBXGroup;
 			children = (
+				26F4589718E5D9AF00CDEC7E /* MapViewDelegate.h */,
 				2683C25818E1AEFD005CAA4A /* MapView.h */,
 				2683C25918E1AEFD005CAA4A /* MapView.m */,
 			);
@@ -293,10 +329,71 @@
 		2683C26A18E1B617005CAA4A /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				2683C26718E1B612005CAA4A /* DiaryView.h */,
-				2683C26818E1B612005CAA4A /* DiaryView.m */,
+				2683C26718E1B612005CAA4A /* DagBoekView.h */,
+				2683C26818E1B612005CAA4A /* DagBoekView.m */,
 			);
 			name = Diary;
+			sourceTree = "<group>";
+		};
+		26F4586D18E566E200CDEC7E /* mapdata */ = {
+			isa = PBXGroup;
+			children = (
+				2685D79218E55FC900B89858 /* route.geojson */,
+				2685D79418E5623C00B89858 /* ieper_straten.mbtiles */,
+			);
+			name = mapdata;
+			sourceTree = "<group>";
+		};
+		26F4586E18E5670A00CDEC7E /* json */ = {
+			isa = PBXGroup;
+			children = (
+				26F4588B18E5CFA200CDEC7E /* uitkomst.json */,
+				26F4587A18E58D1300CDEC7E /* keuzes.json */,
+				26F4586F18E5671800CDEC7E /* situaties.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		26F4587518E567F900CDEC7E /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				2659164718E41F510004090F /* LabelFactory.h */,
+				2659164818E41F510004090F /* LabelFactory.m */,
+			);
+			name = Label;
+			sourceTree = "<group>";
+		};
+		26F4587618E5680700CDEC7E /* Situatie */ = {
+			isa = PBXGroup;
+			children = (
+				26F4587118E567CE00CDEC7E /* SituatieData.h */,
+				26F4587218E567CE00CDEC7E /* SituatieData.m */,
+				26F4587718E5694A00CDEC7E /* SituatieFactory.h */,
+				26F4587818E5694A00CDEC7E /* SituatieFactory.m */,
+			);
+			name = Situatie;
+			sourceTree = "<group>";
+		};
+		26F4587C18E58D9D00CDEC7E /* Keuzes */ = {
+			isa = PBXGroup;
+			children = (
+				26F4587D18E58E5300CDEC7E /* KeuzeData.h */,
+				26F4587E18E58E5300CDEC7E /* KeuzeData.m */,
+				26F4588018E58E5D00CDEC7E /* KeuzeFactory.h */,
+				26F4588118E58E5D00CDEC7E /* KeuzeFactory.m */,
+			);
+			name = Keuzes;
+			sourceTree = "<group>";
+		};
+		26F4588D18E5D0E400CDEC7E /* Uitkomsten */ = {
+			isa = PBXGroup;
+			children = (
+				26F4588E18E5D0F100CDEC7E /* UitkomstData.h */,
+				26F4588F18E5D0F100CDEC7E /* UitkomstData.m */,
+				26F4589118E5D18700CDEC7E /* UitkomstFactory.h */,
+				26F4589218E5D18700CDEC7E /* UitkomstFactory.m */,
+			);
+			name = Uitkomsten;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,10 +476,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F4587B18E58D1300CDEC7E /* keuzes.json in Resources */,
 				2677803818E39601003990E9 /* Albertsthal-Typewriter.ttf in Resources */,
 				2683C21D18E16B2A005CAA4A /* InfoPlist.strings in Resources */,
-				2659165118E45F620004090F /* ieper_straten.mbtiles in Resources */,
 				2683C22818E16B2A005CAA4A /* Images.xcassets in Resources */,
+				26F4587018E5671800CDEC7E /* situaties.json in Resources */,
+				26F4588C18E5CFA200CDEC7E /* uitkomst.json in Resources */,
+				2685D79318E55FC900B89858 /* route.geojson in Resources */,
+				2685D79518E5623C00B89858 /* ieper_straten.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,15 +537,22 @@
 			files = (
 				2683C22318E16B2A005CAA4A /* AppDelegate.m in Sources */,
 				2683C26018E1B31D005CAA4A /* MapViewController.m in Sources */,
+				26F4587318E567CE00CDEC7E /* SituatieData.m in Sources */,
+				26F4588218E58E5D00CDEC7E /* KeuzeFactory.m in Sources */,
 				2659164918E41F510004090F /* LabelFactory.m in Sources */,
 				2683C26D18E1B9F0005CAA4A /* NavigationViewController.m in Sources */,
-				2683C26918E1B612005CAA4A /* DiaryView.m in Sources */,
+				2683C26918E1B612005CAA4A /* DagBoekView.m in Sources */,
 				260CFE2818E4C0CA00F3E67D /* PopUpView.m in Sources */,
 				2683C21F18E16B2A005CAA4A /* main.m in Sources */,
+				26F4587F18E58E5300CDEC7E /* KeuzeData.m in Sources */,
+				26F4589018E5D0F100CDEC7E /* UitkomstData.m in Sources */,
+				26F4589618E5D8FB00CDEC7E /* DagboekViewController.m in Sources */,
 				2683C22618E16B2A005CAA4A /* _00jaargeleden.xcdatamodeld in Sources */,
+				26F4589318E5D18700CDEC7E /* UitkomstFactory.m in Sources */,
 				2677803C18E3A358003990E9 /* HelpView.m in Sources */,
 				2677803F18E3A38F003990E9 /* HelpViewController.m in Sources */,
 				2683C25A18E1AEFD005CAA4A /* MapView.m in Sources */,
+				26F4587918E5694A00CDEC7E /* SituatieFactory.m in Sources */,
 				2683C24C18E17C8F005CAA4A /* MainViewController.m in Sources */,
 				2677803518E38A19003990E9 /* NavigationViewController+Retro.m in Sources */,
 				2683C25018E18167005CAA4A /* StartView.m in Sources */,

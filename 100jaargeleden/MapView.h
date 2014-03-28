@@ -12,15 +12,28 @@
 #import <RMMapboxSource.h>
 #import <RMPointAnnotation.h>
 #import <RMTileCache.h>
+#import <RMShape.h>
 #import "PopUpView.h"
+#import <RMMarker.h>
+#import "SituatieData.h"
+#import "MapViewDelegate.h"
 
 @interface MapView : UIView <UIGestureRecognizerDelegate, CLLocationManagerDelegate, PopUpViewDelegate, RMMapViewDelegate>
 
 
 @property (nonatomic, strong) RMMapView *mapView;
 @property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, assign) CLLocationCoordinate2D nextTarget;
 @property (nonatomic, strong) UIButton *buttonDagboek;
 @property (nonatomic, strong) PopUpView *popupView;
+@property (nonatomic, strong) NSMutableArray *points;
+@property (nonatomic, strong) NSMutableArray *situaties;
+@property (nonatomic, strong) NSMutableArray *keuzes;
+@property (nonatomic, strong) NSMutableArray *targets;
+@property (nonatomic, strong) NSMutableArray *uitkomsten;
+@property (nonatomic, strong) NSMutableArray *keuzeAnnotations;
+@property (nonatomic, strong) NSMutableDictionary *dagboekVerhalen;
 @property (nonatomic) BOOL meldingShown;
+@property (nonatomic) int situatieid;
+@property (nonatomic, weak) id<MapViewDelegate> delegate;
+- (void)updateMapWithSituaties:(NSMutableArray *)situatieArray andKeuzes:(NSMutableArray *)keuzeArray andUitkomsten:(NSMutableArray *)uitkomstenArray;
 @end

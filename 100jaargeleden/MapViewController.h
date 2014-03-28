@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "MapView.h"
-#import "DiaryView.h"
+#import "DagBoekView.h"
+#import "KeuzeFactory.h"
+#import "SituatieFactory.h"
+#import "UitkomstFactory.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<MapViewDelegate>
 
 
 @property (nonatomic, strong) MapView *mapv;
+@property (nonatomic, strong) NSMutableArray *situaties;
+@property (nonatomic, strong) NSMutableArray *keuzes;
+@property (nonatomic, strong) NSMutableArray *uitkomsten;
 @end

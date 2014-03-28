@@ -29,7 +29,7 @@
     transition.duration = 0.25;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionPush;
-    transition.subtype = kCATransitionFromLeft;
+    [[UIDevice currentDevice]orientation]==UIDeviceOrientationLandscapeLeft ? (transition.subtype = kCATransitionFromBottom) : (transition.subtype = kCATransitionFromTop);
     [self.view.layer addAnimation:transition forKey:nil];
     
     [self popViewControllerAnimated:NO];

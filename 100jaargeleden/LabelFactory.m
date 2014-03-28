@@ -9,12 +9,12 @@
 #import "LabelFactory.h"
 
 @implementation LabelFactory
-+ (UILabel *)createTypewriterLabelWithText: (NSString*)text andXPos: (double)xpos andYPos: (double)ypos andWidth: (float)width andRotation:(double)rotation andFontSize: (double)fontsize andKerning: (NSNumber *)letterKerning
++ (UILabel *)createTypewriterLabelWithText: (NSString*)text andXPos: (double)xpos andYPos: (double)ypos andWidth: (float)width andRotation:(double)rotation andFont: (NSString* )fontString andFontSize: (double)fontsize andKerning: (NSNumber *)letterKerning andLineHeight: (int)lineHeight
 {
     //attributes aanmaken
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    [paragraphStyle setLineSpacing:7];
-    UIFont *font = [UIFont fontWithName:@"Albertsthal_Typewriter" size:fontsize];
+    [paragraphStyle setLineSpacing:lineHeight];
+    UIFont *font = [UIFont fontWithName:fontString size:fontsize];
     UIColor *color = [UIColor blackColor];
     NSNumber *kerning = letterKerning;
     
@@ -22,12 +22,11 @@
     NSDictionary *attributes = [[NSDictionary alloc]initWithObjects:[[NSArray alloc]initWithObjects:paragraphStyle, font, color, kerning, nil] forKeys:[[NSArray alloc]initWithObjects:NSParagraphStyleAttributeName, NSFontAttributeName, NSForegroundColorAttributeName, NSKernAttributeName, nil]];
     
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]initWithString:text];
-    
     [attributedString addAttributes:attributes range:NSMakeRange(0, attributedString.string.length)];
     
     CGRect rect = [attributedString boundingRectWithSize:CGSizeMake(width, 10000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
     
-    UILabel *lbltext = [[UILabel alloc]initWithFrame:CGRectMake(xpos, ypos, 420, ceilf(rect.size.height))];
+    UILabel *lbltext = [[UILabel alloc]initWithFrame:CGRectMake(xpos, ypos, width, ceilf(rect.size.height))];
     lbltext.lineBreakMode = NSLineBreakByWordWrapping;
     lbltext.textAlignment = NSTextAlignmentLeft;
     lbltext.numberOfLines = 0;
